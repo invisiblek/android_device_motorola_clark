@@ -150,10 +150,10 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
 TARGET_RIL_VARIANT := caf
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
+#include device/qcom/sepolicy/sepolicy.mk
 
-BOARD_SEPOLICY_DIRS += \
-    $(DEVICE_PATH)/sepolicy
+#BOARD_SEPOLICY_DIRS += \
+#    $(DEVICE_PATH)/sepolicy
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
@@ -173,3 +173,11 @@ TARGET_USES_WCNSS_MAC_ADDR_REV   := true
 WIFI_DRIVER_FW_PATH_STA          := "sta"
 WIFI_DRIVER_FW_PATH_AP           := "ap"
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
+
+# TWRP definitions
+DEVICE_RESOLUTION := 1440x2560
+TARGET_RECOVERY_FSTAB := device/motorola/clark/twrp.fstab
+TW_NEW_ION_HEAP := true
+TW_INCLUDE_CRYPTO := true
+TW_SCREEN_BLANK_ON_BOOT := true
+TARGET_RECOVERY_QCOM_RTC_FIX := true
