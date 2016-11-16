@@ -66,17 +66,17 @@ void vendor_load_properties()
             /* India */
             setMsim();
             property_set("ro.build.description", "clark_retasia_ds-user 6.0 MPH24.49-18 18 release-keys");
-            property_set("ro.build.fingerprint", "motorola/clark_retasia_ds/clark_ds:6.0/MPH24.49-18/18:user/release-keys");
+            property_set("ro.build.fingerprint", "motorola/clark_retasia_ds/clark_ds:6.0/MPH24.49-18/18:user/test-keys");
         }
         else if (strstr(car, "retbr")) {
             /* Brazil */
             setMsim();
             property_set("ro.build.description", "clark_retla_ds-user 6.0 MPH24.49-18 18 release-keys");
-            property_set("ro.build.fingerprint", "motorola/clark_retla_ds/clark_ds:6.0/MPH24.49-18/18:user/release-keys");
+            property_set("ro.build.fingerprint", "motorola/clark_retla_ds/clark_ds:6.0/MPH24.49-18/18:user/test-keys");
         } else {
             setSsim();
             property_set("ro.build.description", "clark_reteu-user 6.0.1 MPHS24.107-58-1 1 release-keys");
-            property_set("ro.build.fingerprint", "motorola/clark_reteu/clark:6.0.1/MPHS24.107-58-1/1:user/release-keys");
+            property_set("ro.build.fingerprint", "motorola/clark_reteu/clark:6.0.1/MPHS24.107-58-1/1:user/test-keys");
         }
     } else if (strstr(sku, "XT1575")) {
         /* US */
@@ -87,7 +87,7 @@ void vendor_load_properties()
         property_set("ro.telephony.default_network", "10");
         property_set("telephony.lteOnCdmaDevice", "1");
         property_set("ro.build.description", "clark_retus-user 6.0 MPHS24.49-18-4 5 release-keys");
-        property_set("ro.build.fingerprint", "motorola/clark_retus/clark:6.0/MPHS24.49-18-4/5:user/release-keys");
+        property_set("ro.build.fingerprint", "motorola/clark_retus/clark:6.0/MPHS24.49-18-4/5:user/test-keys");
     } else if (strstr(sku, "XT1570")) {
         /* China */
         setMsim();
@@ -104,7 +104,7 @@ void vendor_load_properties()
         property_set("ril.subscription.types", "RUIM");
         property_set("persist.radio.force_get_pref", "1");
         property_set("ro.build.description", "clark_retcn_ds-user 6.0 MPH24.49-18 18 release-keys");
-        property_set("ro.build.fingerprint", "motorola/clark_retcn_ds/clark_ds:6.0/MPH24.49-18/18:user/release-keys");
+        property_set("ro.build.fingerprint", "motorola/clark_retcn_ds/clark_ds:6.0/MPH24.49-18/18:user/test-keys");
     }
 }
 static void setSsim(void)
