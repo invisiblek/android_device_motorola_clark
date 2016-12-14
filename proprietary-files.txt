@@ -1,7 +1,6 @@
 ## NEEDED?
 vendor/lib/libwifiscanner.so
 vendor/lib64/libwifiscanner.so
-vendor/lib/drm/libdrmwvmplugin.so
 
 ## WORKING
 # ADSP /ADSP-RPC / Vision
@@ -313,8 +312,12 @@ lib/libdmjavaplugin.so:priv-app/DMService/lib/arm/libdmjavaplugin.so
 bin/qseecomd
 etc/permissions/com.google.widevine.software.drm.xml
 framework/com.google.widevine.software.drm.jar
+lib/drm/libfwdlockengine.so
+lib64/drm/libfwdlockengine.so
 lib/hw/keystore.qcom.so
 lib64/hw/keystore.qcom.so
+vendor/lib/drm/libdrmwvmplugin.so
+vendor/lib/libdrmdecrypt.so
 vendor/lib/libdrmfs.so
 vendor/lib64/libdrmfs.so
 vendor/lib/libdrmtime.so
@@ -349,6 +352,8 @@ vendor/lib64/libtzdrmgenprov.so
 vendor/lib/libwvdrm_L1.so
 vendor/lib/libwvm.so
 vendor/lib/libWVStreamControlAPI_L1.so
+vendor/lib/mediadrm/libdrmclearkeyplugin.so
+vendor/lib64/mediadrm/libdrmclearkeyplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
 # Display tuning
