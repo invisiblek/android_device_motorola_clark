@@ -61,16 +61,16 @@ PRODUCT_PACKAGES += \
     libmmcamera_interface \
     libmmjpeg_interface \
     mm-qcamera-app \
-    libshim_camera \
     Snap
+#    libshim_camera \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/com.motorola.cameraone.xml:system/etc/permissions/com.motorola.cameraone.xml
 
 # CMActions
-PRODUCT_PACKAGES += \
-    CMActions \
-    libjni_CMActions
+#PRODUCT_PACKAGES += \
+#    CMActions \
+#    libjni_CMActions
 
 # Display
 PRODUCT_AAPT_CONFIG := normal
@@ -117,9 +117,9 @@ PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
     ro.product.name
 
 # IPA Manager
-PRODUCT_PACKAGES += \
-    ipacm \
-    IPACM_cfg.xml
+#PRODUCT_PACKAGES += \
+#    ipacm \
+#    IPACM_cfg.xml
 
 # Keylayout
 PRODUCT_COPY_FILES += \
